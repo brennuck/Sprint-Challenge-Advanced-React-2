@@ -2,6 +2,9 @@ import React from 'react';
 
 import axios from 'axios';
 import Players from './Components/Players';
+import GoinDark from './Components/GoinDark';
+
+import "./styles.scss";
 
 class App extends React.Component {
   constructor() {
@@ -27,6 +30,7 @@ class App extends React.Component {
   render() {
     return (
       <div>
+        <GoinDark />
         <Players players={this.state.players} />
       </div>
     )
